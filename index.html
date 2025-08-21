@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Real OG</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>The Real Og</h1>
+    <button id="theme-toggle" class="btn">Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Interactive Counter -->
+    <section class="card">
+      <h2>Fun Click Counter</h2>
+      <p>You’ve clicked <span id="counter">0</span> times</p>
+      <button id="increment-btn" class="btn">Click Me!</button>
+      <button id="reset-btn" class="btn secondary">Reset</button>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card">
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <h3 class="faq-question">What is JavaScript? ⬇</h3>
+        <p class="faq-answer hidden">
+            JavaScript is a programming language of the web.
+            It’s what makes websites interactive and dynamic. While HTML provides the structure (like headings, text, and forms) and CSS provides the styling (colors, layouts, fonts), JavaScript adds behavior — meaning it can respond to user actions, update content without reloading the page, and communicate with servers in the background.
+</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">What can I build with it? ⬇</h3>
+        <p class="faq-answer hidden">With JavaScript, you can build all kinds of things that make websites feel alive — from simple features like buttons that show messages, image sliders, and dark mode toggles, to interactive forms that check user input, browser games, and even full web apps like chats or shopping sites. It’s the tool that lets you go beyond plain text and images to create dynamic, engaging, and useful online experiences.</p>
+      </div>
+    </section>
+
+    <!-- Tabs -->
+    <section class="card">
+      <h2>Explore Tabs</h2>
+      <div class="tabs">
+        <button class="tab active" data-target="tab1">Intro</button>
+        <button class="tab" data-target="tab2">Why JS?</button>
+        <button class="tab" data-target="tab3">Future</button>
+      </div>
+      <div class="tab-content">
+        <p id="tab1" class="tab-pane active">JavaScript makes websites come alive! </p>
+        <p id="tab2" class="tab-pane">It’s everywhere — powering 97% of websites </p>
+        <p id="tab3" class="tab-pane">AI + JS will shape the web of tomorrow</p>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="card">
+      <h2>Sign Up Form</h2>
+      <form id="signup-form" novalidate>
+        <label>Name:
+          <input type="text" id="name" placeholder="Enter your full name"/>
+          <small class="error" id="name-error"></small>
+        </label>
+
+        <label>Email:
+          <input type="email" id="email" placeholder="Enter a valid email"/>
+          <small class="error" id="email-error"></small>
+        </label>
+
+        <label>Password:
+          <input type="password" id="password" placeholder="Minimum 6 characters"/>
+          <small class="error" id="password-error"></small>
+        </label>
+
+        <button type="submit" class="btn">Submit</button>
+        <p id="form-success" class="success"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>therealog 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
